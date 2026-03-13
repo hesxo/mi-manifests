@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mi
+  template:
+    metadata:
+      labels:
+        app: mi
+    spec:
+      containers:
+        - name: mi
+          image: nginx:stable
+          ports:
+            - containerPort: 80

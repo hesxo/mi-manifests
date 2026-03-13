@@ -1,0 +1,4 @@
+namespace: mi-prod
+resources:
+  - namespace.yaml
+  - ../../base

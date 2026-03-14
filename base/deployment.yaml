@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mi
-          image: hesxo/mi-config:0.1.0
+          image: hesxo/mi-config:9
           imagePullPolicy: Always
           ports:
             - containerPort: 8290
